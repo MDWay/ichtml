@@ -1,0 +1,37 @@
+
+.sidebar {
+    width: 25%;
+    overflow: auto;
+    position: absolute;
+}
+
+.teal {
+    width: 100%;
+    background: #0099ff;
+    border-bottom: 1px solid #007acc;
+}
+
+.hamburger {
+    width: 100%;
+}
+
+.sidebar-button {
+    text-align: right;
+    color: black;
+    border-right: 1px solid #000;
+}
+
+.sidebar-button:hover {
+}
+
+.sidebar-last {
+    border-bottom: 1px solid #000;
+}
+
+.sidebar-close {
+    background: #3385ff;
+}
+
+.sidebar-close:hover {
+    background: #0066ff;
+}
