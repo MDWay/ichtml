@@ -30,7 +30,7 @@ function open_timetable() {
 function onload() {
 	$.getJSON("content/content.json", function(data){
 		var el = $("#sidebar");
-		data.forEach(function(item){
+		data.forEach((item)=>{
 			var load = item.load;
 			var url = item.url;
 			var name = item.name;
