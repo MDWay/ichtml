@@ -37,7 +37,7 @@ function onload() {
 				atag.href = "#";
 				atag.onclick = function(){
 					sidebar_close();
-					load(item.url, item.name);
+					window.load(item.url, item.name);
 				};
 			}
 			var texttag = document.createTextNode(name);
