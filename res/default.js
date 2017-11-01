@@ -31,7 +31,7 @@ function onload() {
 			if(load=="href"){
 				atag.href = url;
 				atag.target = "_blank";
-				atag.onclick = "sidebar_close()";
+				atag.onclick = sidebar_close;
 			}
 			if(load=="content"){
 				atag.href = "#";
