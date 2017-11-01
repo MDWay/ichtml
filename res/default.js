@@ -13,6 +13,7 @@ function show_loading() {
 function load(file, title) {
 	show_loading();
 	$("#header").text(title);
+	document.title = 'IcHTML - ' + title;
 	$.get("content/"+file, function(data) {
 		$("#content").html(data);
 	}, "text");
