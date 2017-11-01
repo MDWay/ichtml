@@ -22,9 +22,9 @@ function load(file, title) {
 var contentid = 0;
 var contents = [];
 
-function open_timetable() {
+function load_content(id){
 	sidebar_close();
-	load('timetable.html', 'Stundenplan');
+	load(contents[id].url, contents[id].name);
 }
 
 function onload() {
@@ -44,7 +44,7 @@ function onload() {
 			if(load=="content"){
 				contents[contentid] = item;
 				atag.href = "#";
-				atag.onclick = "load("+contentid+")";
+				atag.onclick = "load_content("+contentid+")";
 				contentid++;
 			}
 			var texttag = document.createTextNode(name);
