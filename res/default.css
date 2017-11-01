@@ -15,13 +15,13 @@ img {
 
 a {
     text-decoration: none;
-    margin: 0;
-    padding: 10px;
 }
 
 .button {
     display: block;
     background: #eee;
+    margin: 0;
+    padding: 10px;
 }
 
 .button:hover {
