@@ -19,14 +19,6 @@ function load(file, title) {
 	}, "text");
 }
 
-var contentid = 0;
-var contents = [];
-
-function load_content(id){
-	sidebar_close();
-	load(contents[id].url, contents[id].name);
-}
-
 function onload() {
 	$.getJSON("content/content.json", function(data){
 		var el = $("#sidebar")[0];
@@ -42,10 +34,11 @@ function onload() {
 				atag.onclick = "sidebar_close()";
 			}
 			if(load=="content"){
-				contents[contentid] = item;
 				atag.href = "#";
-				atag.onclick = "load_content("+contentid+")";
-				contentid++;
+				atag.onclick = function(){
+					sidebar_close();
+					load(item.url, item.name);
+				};
 			}
 			var texttag = document.createTextNode(name);
 			if(img) {
