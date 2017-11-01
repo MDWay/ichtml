@@ -10,13 +10,20 @@ function show_loading() {
 	$("#content").html(("<div class='spinner centered'></div>"));
 }
 
-function load(file, title) {
+function load_(file, title) {
 	show_loading();
 	$("#header").text(title);
 	document.title = 'IcHTML - ' + title;
 	$.get("content/"+file, function(data) {
 		$("#content").html(data);
 	}, "text");
+}
+
+var refs = {};
+
+function load(id){
+	var item = refs[id];
+	load_(item.url, item.name);
 }
 
 function onload() {
@@ -27,6 +34,10 @@ function onload() {
 			var url = item.url;
 			var name = item.name;
 			var img = item.img;
+			refs[item.id] = {
+				name: name,
+				url: url
+			}
 			var atag = document.createElement("a");
 			if(load=="href"){
 				atag.href = url;
@@ -37,7 +48,7 @@ function onload() {
 				atag.href = "#";
 				atag.onclick = function(){
 					sidebar_close();
-					window.load(item.url, item.name);
+					window.load_(item.url, item.name);
 				};
 			}
 			var texttag = document.createTextNode(name);
