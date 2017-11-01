@@ -13,7 +13,7 @@ function show_loading() {
 function load(file, title) {
 	show_loading();
 	$("#header").text(title);
-	$.get("file:///H:/ichtml/content/"+file, function(data) {
+	$.get("/content/"+file, function(data) {
 		$("#content").html(data);
 	}, "text");
 }
