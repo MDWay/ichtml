@@ -2,7 +2,14 @@
   {
     "name": "Stundenplan",
     "load": "content",
-    "url": "timetable.html"
+    "url": "timetable.html",
+    "id": "timetable"
+  },
+  {
+    "name": "Mathe",
+    "load": "content",
+    "url": "maths.html",
+    "id": "maths"
   },
   {
     "name": "Gitlab",
