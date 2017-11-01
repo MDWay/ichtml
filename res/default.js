@@ -29,6 +29,7 @@ function open_timetable() {
 
 function onload() {
 	$.getJSON("content/content.json", function(data){
+		var el = $("#sidebar")[0];
 		data.forEach((item)=>{
 			var load = item.load;
 			var url = item.url;
@@ -55,8 +56,8 @@ function onload() {
 			atag.appendChild(texttag);
 			atag.classList.add('button');
 			atag.classList.add('sidebar-button');
-			$("#sidebar").appendChild(atag);
+			el.appendChild(atag);
 		});
-		$("#sidebar").lastChild.classList.add('sidebar-last');
+		el.lastChild.classList.add('sidebar-last');
 	});
 }
