@@ -5,6 +5,7 @@
     position: absolute;
     top: 0;
     left: -25%;
+    transition: all 500ms;
 }
 
 .sidebar-active{
