@@ -1,9 +1,9 @@
 function sidebar_close() {
-    $("#sidebar").fadeOut();
+    $("#sidebar")[0].classList.remove('active');
 }
 
 function sidebar_open() {
-    $("#sidebar").fadeIn();
+    $("#sidebar")[0].classList.add('active');
 }
 
 function show_loading() {
