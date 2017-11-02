@@ -27,7 +27,9 @@ function load(id){
 }
 
 function onload() {
-	$.getJSON("content/content.json", function(data){
+	$.getJSON({cache: false,url:"content/content.json"})
+		
+		.then(function(data){
 		var el = $("#sidebar")[0];
 		data.forEach((item)=>{
 			var load = item.load;
