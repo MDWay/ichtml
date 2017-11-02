@@ -6,6 +6,12 @@
     "id": "timetable"
   },
   {
+    "name": "Informatik",
+    "load": "content",
+    "url": "info.html",
+    "id": "info"
+  },
+  {
     "name": "Mathe",
     "load": "content",
     "url": "maths.html",
