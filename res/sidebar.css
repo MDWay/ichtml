@@ -8,7 +8,7 @@
     transition: all 500ms;
 }
 
-@media (max-width: 580) {
+@media (max-device-width: 580px) {
   .sidebar {
     width: 100%;
     left:0 ;
