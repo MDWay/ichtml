@@ -8,8 +8,18 @@
     transition: all 500ms;
 }
 
+@media (max-width: 580) {
+  .sidebar {
+    width: 100%;
+    left:0 ;
+    top: -100%;
+    height: 100%;
+  }
+}
+
 .sidebar-active{
     left: 0;
+    top: 0;
 }
 
 .teal {
