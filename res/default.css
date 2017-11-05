@@ -9,7 +9,7 @@ img {
 
 .header {
     right: 2px;
-    position: absolute;
+    position: relative;
     text-align: right;
 }
 
