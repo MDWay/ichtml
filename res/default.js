@@ -24,9 +24,7 @@ var refs = {};
 function load(id){
 	var item = refs[id];
 	let tag = location.href.split("#");
-	if(tag.length>1){
-		location.href = tag[0];
-	}
+	location.href = tag[0] + "#" + id;
 	load_(item.url, item.name);
 }
 
