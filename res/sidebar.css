@@ -45,7 +45,7 @@
 }
 
 .hamburger::before {
-    content: "&#9776;";
+    content: "☰";
     font-weight: 10000;
 }
 
