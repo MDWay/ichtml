@@ -39,5 +39,6 @@ a {
 }
 
 #content {
-    margin: 2px;
+    width: 50%;
+    margin: 0 auto;
 }
