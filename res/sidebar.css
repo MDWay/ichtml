@@ -45,9 +45,8 @@
 }
 
 .hamburger::before {
-    content: "-";
-    text-decoration: overline, underline;
-    font-weight: 1000;
+    content: "&#9776;";
+    font-weight: 10000;
 }
 
 
