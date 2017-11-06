@@ -16,7 +16,7 @@
 
 
 
-@media (max-device-width: 580px) {
+@media (max-width: 580px) {
   .sidebar {
     width: 100%;
     left:0 ;
