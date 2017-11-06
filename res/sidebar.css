@@ -46,7 +46,7 @@
 
 .hamburger::before {
     content: "☰";
-    font-weight: 10000;
+    font-weight: bold;
 }
 
 
