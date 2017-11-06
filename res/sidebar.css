@@ -44,8 +44,10 @@
     padding: 10px;
 }
 
-.hamburger {
-    width: 100%;
+.hamburger::before {
+    content: "-";
+    text-decoration: overline, underline;
+    font-weight: 1000;
 }
 
 
