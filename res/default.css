@@ -39,6 +39,7 @@ a {
 }
 
 #content {
-    width: 50%;
+    line-height: 1.5em;
+    width: 70%;
     margin: 0 auto;
 }
