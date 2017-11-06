@@ -36,7 +36,8 @@ function onload() {
 			var url = item.url;
 			var name = item.name;
 			var img = item.img;
-			refs[item.id] = {
+			var id = item.id;
+			refs[id] = {
 				name: name,
 				url: url
 			}
@@ -47,7 +48,7 @@ function onload() {
 				atag.onclick = sidebar_close;
 			}
 			if(load=="content"){
-				atag.href = "#";
+				atag.href = "#"+item.id;
 				atag.onclick = function(){
 					sidebar_close();
 					window.load_(item.url, item.name);
@@ -66,4 +67,8 @@ function onload() {
 		});
 		el.lastChild.classList.add('sidebar-last');
 	});
+	let tag = location.href.split("#");
+	if(tag.length > 1){
+		load(tag[1]);
+	}
 }
