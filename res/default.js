@@ -66,9 +66,9 @@ function onload() {
 			el.appendChild(atag);
 		});
 		el.lastChild.classList.add('sidebar-last');
+		let tag = location.href.split("#");
+		if(tag.length > 1){
+			load(tag[1]);
+		}
 	});
-	let tag = location.href.split("#");
-	if(tag.length > 1){
-		load(tag[1]);
-	}
 }
