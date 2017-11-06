@@ -37,6 +37,9 @@
     width: 100%;
     background: #0099ff;
     border-bottom: 1px solid #007acc;
+    box-sizing: border:box;
+    margin: 0;
+    padding: 10px;
 }
 
 .hamburger {
