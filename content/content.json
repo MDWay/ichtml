@@ -18,6 +18,30 @@
     "id": "maths"
   },
   {
+    "name": "WPA2",
+    "load": "content",
+    "url": "wpa2.html",
+    "id": "wpa2"
+  },
+  {
+    "name": "CSMA/CD",
+    "load": "content",
+    "url": "csmacd.html",
+    "id": "csmacd"
+  },
+  {
+    "name": "CSMA/CA",
+    "load": "content",
+    "url": "csmaca.html",
+    "id": "csmaca"
+  },
+  {
+    "name": "KRACK",
+    "load": "content",
+    "url": "krack.html",
+    "id": "krack"
+  },
+  {
     "name": "Lorem",
     "load": "content",
     "url": "lorem.html",

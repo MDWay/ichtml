@@ -1,0 +1,19 @@
+WPA2 ist ein Standard zur Verschlüsselung von WLAN-Verbindungen. Der wichtigste Punkt und Vorteil von WPA2 gegenüber seinen Vorgängern 
+<a class="highlight" href="https://de.wikipedia.org/wiki/Wi-Fi_Protected_Access">WPA</a> und
+<a class="highlight" href="https://de.wikipedia.org/wiki/Wired_Equivalent_Privacy">WEP</a> 
+ist der 4-Weg-Handschlag anstelle eines 3-Weg-Handschlags.
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/4-way-handshake_WPA2.png" title="Four-Way-handshake-Diagram"></p>
+<ol>
+	<li>Beim einloggen in einen <span class="tt" title="Acces Point">AP</span> gibt der Client/Supplicant erst
+	einmal dem <span class="tt" title="Acces Point">AP</span> bekannt das er sich einloggen will.</li>
+	<li>Der <span class="tt" title="Acces Point">AP</span> sendet infolgedessen eine zufällig generierte 
+	<span class="tt" title="Accespoint Number once">ANonce</span> zum Client</li>
+	<li>Der Client erstellt aus der <span class="tt" title="Authenticator Nonce">ANonce</span> 
+	und dem <span class="tt" title="Pairwise Master Key">PMK</span>
+	den <span class="tt" title="Pairwise Transient Key">PTK</span> und sendet den zusammen mit der
+	<span class="tt" title="Message Integrity Check">MIC</span> zum <span class="tt" title="Acces Point">AP</span></li>
+	<li>Der <span class="tt" title="Acces Point">AP</span> schickt dem Client die <span class="tt" title="Message Integrity Check">MIC</span>
+	zusammen mit dem <span class="tt" title="Group Transient Key (für Unicasts)">GTK</span> an den Supplicant. Dieser Schritt ist bereits verschlüsselt</li>
+	<li>Der Client sendet eine letzte nachricht an den <span class="tt" title="Acces Point">AP</span>
+	in dem er bekannt gibt das er die Nachricht empfangen hat. Dieser Schritt wird bei <a href="#" onclick="load('krack')">KRACK</a> unterdrückt.</li>
+</ol>
